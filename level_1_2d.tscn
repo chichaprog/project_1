@@ -1,0 +1,136 @@
+[gd_scene load_steps=8 format=3 uid="uid://dgv5b2piokasb"]
+
+[ext_resource type="Script" path="res://level_1_2d.gd" id="1_3bai1"]
+[ext_resource type="FontFile" uid="uid://chbx673hkfek2" path="res://Daneehand Regular Cyr.ttf" id="1_6d84y"]
+[ext_resource type="Texture2D" uid="uid://d4n3tht6kyavi" path="res://icon.svg" id="2_c7b1o"]
+[ext_resource type="Script" path="res://button_2.gd" id="4_debme"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vomgs"]
+bg_color = Color(0.386505, 0.690088, 0.237094, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.298689, 0.890986, 0.962213, 1)
+border_blend = true
+shadow_color = Color(0, 0.694035, 0.23932, 0.6)
+shadow_size = 111
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wi172"]
+bg_color = Color(0, 0.689762, 0.664083, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.730584, 0.792069, 1, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+shadow_color = Color(0.278359, 0.799276, 0.847227, 0.6)
+shadow_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8fq1k"]
+bg_color = Color(0.490196, 0.560784, 0.423529, 1)
+
+[node name="level_1_2d" type="Node2D"]
+script = ExtResource("1_3bai1")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -175.0
+offset_top = -1573.0
+offset_right = 314.0
+offset_bottom = -1232.0
+theme_override_colors/font_color = Color(0.1977, 0.497046, 0.56598, 1)
+theme_override_colors/font_shadow_color = Color(0.580496, 0.387568, 0.890188, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 11
+theme_override_fonts/font = ExtResource("1_6d84y")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_vomgs")
+text = "hello
+
+				"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 20.0
+offset_top = -480.0
+offset_right = 271.0
+offset_bottom = -138.0
+theme_override_colors/font_color = Color(0.943619, 3.27289e-06, 0.560156, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.669105, 0.0826965, 1)
+theme_override_colors/font_outline_color = Color(0.572983, 0.650568, 0.814426, 1)
+theme_override_constants/line_spacing = 100
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_outline_size = 5
+theme_override_fonts/font = ExtResource("1_6d84y")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_wi172")
+text = "hi mouse
+"
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 5.0
+offset_top = 381.0
+offset_right = 411.0
+offset_bottom = 645.0
+theme_override_colors/font_hover_color = Color(0.784121, 0.128523, 0.406287, 1)
+theme_override_colors/font_pressed_color = Color(0.697771, 0.239584, 0.266709, 1)
+theme_override_colors/font_focus_color = Color(0.317115, 0.439792, 0.866925, 1)
+theme_override_colors/font_color = Color(0.192492, 0.488955, 0.463454, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/h_separation = 10
+theme_override_constants/align_to_largest_stylebox = 10
+theme_override_fonts/font = ExtResource("1_6d84y")
+theme_override_font_sizes/font_size = 60
+theme_override_icons/icon = ExtResource("2_c7b1o")
+text = "						click"
+icon_alignment = 1
+vertical_icon_alignment = 2
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 645.0
+offset_top = 137.0
+offset_right = 954.0
+offset_bottom = 397.0
+rotation = -0.0959931
+theme_override_colors/font_hover_color = Color(0.492175, 0.542869, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.568996, 0.476104, 0.784675, 1)
+theme_override_colors/font_focus_color = Color(0.239216, 0.356863, 0.419608, 1)
+theme_override_colors/font_color = Color(0.207355, 0.588678, 0.589181, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/h_separation = 10
+theme_override_constants/icon_max_width = 10
+theme_override_constants/align_to_largest_stylebox = 10
+theme_override_fonts/font = ExtResource("1_6d84y")
+theme_override_font_sizes/font_size = 60
+text = "click here"
+script = ExtResource("4_debme")
+
+[node name="Button3" type="Button" parent="."]
+offset_left = -197.0
+offset_top = 78.0
+offset_right = 16.0
+offset_bottom = 339.0
+theme_override_colors/font_hover_color = Color(1.44392e-07, 0.716469, 0.415072, 1)
+theme_override_colors/font_pressed_color = Color(0.092186, 0.503274, 0.719198, 1)
+theme_override_colors/font_focus_color = Color(0.27451, 0.533333, 0.560784, 1)
+theme_override_colors/font_color = Color(0.620406, 0.543357, 0.767615, 1)
+theme_override_constants/outline_size = 15
+theme_override_constants/h_separation = 10
+theme_override_constants/icon_max_width = 10
+theme_override_constants/align_to_largest_stylebox = 10
+theme_override_fonts/font = ExtResource("1_6d84y")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxFlat_8fq1k")
+text = "hello"
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
